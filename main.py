@@ -7,7 +7,7 @@ app = FastAPI()
 
 @app.get("/")
 async def welcome():
-    return {"Welcome":"Welcome to the API for EU Pesticides DataBase"}
+    return {"Welcome":"Welcome to the API for EU Pesticides DataBase!"}
 
 #GETs all the MRLs from a Residue definition. Residue definition (str) must be THE SAME as the one in the the database
 @app.get("/mrls/MRLsFullList")
