@@ -21,6 +21,6 @@ urllib3==1.26.12
 xmltodict==0.13.0
 zope.interface==5.4.0
 backports.zoneinfo
-python==3.8.10
+
 
 
