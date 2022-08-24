@@ -3,6 +3,7 @@ import json
 #import FileGenerator
 import re
 
+#This is a free to use API for delivering EU MRLs information
 app = FastAPI()
 
 @app.get("/")
