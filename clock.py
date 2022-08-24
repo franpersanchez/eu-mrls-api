@@ -8,6 +8,6 @@ def thisfunc():
 sched = BackgroundScheduler()
 
 # Schedule job_function to be called every day
-sched.add_job(thisfunc, 'intervals', seconds=30)
+sched.add_job(thisfunc, 'interval', seconds=30)
 
 sched.start()
