@@ -1,11 +1,13 @@
-from apscheduler.schedulers.blocking import BlockingScheduler
+from apscheduler.schedulers.blocking import BackgroundScheduler
 from datetime import datetime
 from FileGenerator import fileCreation
 
-
-sched = BlockingScheduler()
+def thisfunc():
+    print("todo bien")
+    
+sched = BackgroundScheduler()
 
 # Schedule job_function to be called every day
-sched.add_job(fileCreation, 'cron', hour=3, minute=30)
+sched.add_job(thisfunc, 'intervals', seconds=30)
 
 sched.start()
